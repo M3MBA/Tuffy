@@ -1,0 +1,103 @@
+.timer {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: monospace;
+      width: 250px;
+      text-align: center;
+    }
+
+.frame {
+          border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACbElEQVR4Xu2bwZLCQAhE4/9/9O7FsnTU9HRoRlO+vTIQePQgptzLxl+UwCUajWAbQMMiAChAwwTC4VAoQMMEwuFQKEDDBMLhUChAwwTC4VAoQG0Cf4NHq4hag9ul9zgANMwVoL8OVClA2RU/5T/aVTxlL43BkvM1M7dg95lufAVM2d38HuKVnAH63BuAhpl0AFVXarSPOVRnohsvweBWUyLYagCqYQAdCK1uUEJUKPSuiR8H6irIvYLVGasAqfyV/+7IOeKsEqoCqfqrmlT+yh+g5owGqPl67usUOkpefTVUa063vRWgmk9HigNoeGUAKEDjL4g+utiXPkUPzKSlNyhRnBr6HXPb4QpQh9bEWYBOQHKOnA6o2ku/7cq35pOYoQANr00ABei599COseJ8KC29QYli1R6aeEYFIECT9F7EahVAQj2tCTbAbc03AXTplToAuBVg61J7Db60gAnAS/NBoVv2/10BegKgaqZ2NHHv5qsrHx2DK4pb+rbnwJoE0IkPovsjKNQEpo6fHqgqYMWYUZD3FFzKr+T8JmuAOu2cOAvQCUjOEYA6tA6sJWqsuA1Q59UaVPXfxaWKnWGtElTPcP3VeYCKrq3+BbRqCAodCFQV3g5UfXdXHXcLXB1vZuzdzqj5ZgW7HlaAqlcYoAMBgJoyRaEmMHdmuuGVgt0xpV4fKruVv5vcq+BKkVZC2/Mb9GrByl/ZrfwBum0AtSSjgX0dUFVfNGH1sE/bE1de1QBQRci0A9QEpo4DVBHC/p7Aihn6U/wBGm43QAEaJhAOh0IBGiYQDodCARomEA6HQgEaJhAOh0LDQP8B/zaYVZPdn1oAAAAASUVORK5CYII=") 28 /  28px / 0 round;
+          border-width:  28px;
+          border-style:  solid;
+    }
+.inner {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  }
+
+
+.timer span {
+      font-weight: bold;
+    }
+
+@media  screen and  (min-width: 600px)  {
+    .timer {
+          width: 500px;
+        }
+      }
+
+@media (max-width: 700px) {
+    .Alignment {
+        display: none;
+        }
+      }
+
+canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+.Alignment  {
+    position: fixed;
+    bottom: 15px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+.left {
+    left: 15px;
+      }
+
+.Right {
+    left: 1365px;
+      }
+
+
+
+.github {
+        background: url("https://avatars.githubusercontent.com/u/9919?s=280&v=4");
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 20%;
+        background-size: 35px 35px;
+        background-position: center;
+        vertical-align: top;
+        }
+
+.linkedin {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC");
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 20%;
+        background-size: 35px 35px;
+        background-position: center;
+        vertical-align: top;
+        }
+
+
+.Random_pet {
+        background: url("https://png.pngtree.com/png-vector/20210610/ourmid/pngtree-tiger-cartoon-animal-png-image_3428774.jpg");
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 20%;
+        background-size: 35px 35px;
+        background-position: center;
+        vertical-align: top;
+        }
