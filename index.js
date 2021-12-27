@@ -2,7 +2,7 @@ const canvas = document.querySelector("canvas");
 const secondsCount = document.querySelector(".seconds");
 const level = document.querySelector(".grade");
 const context = canvas.getContext("2d");
-const pugDimensions = { width: 353 * 1.2, height: 325 * 1.2 };
+const tuffyDimensions = { width: 353 * 1.2, height: 325 * 1.2 };
 
 const levels = {
   5: "Wait, Hello visitor",
@@ -29,7 +29,7 @@ context.translate(window.innerWidth / 2, window.innerHeight / 2);
 
 const image = new Image();
 
-image.src = "Raul.png";
+image.src = "image/Raul.png";
 
 const loopingPugs = 40;
 
@@ -66,10 +66,10 @@ function draw(offset, loopCount) {
   let currentPercentage = (loopingPugs - loopCount) / loopingPugs
   context.drawImage(
     image,
-    -pugDimensions.width / 2 - offset/2 + (movementOffset.x * currentPercentage),
-    -pugDimensions.height / 2 - offset/2 + (movementOffset.y * currentPercentage),
-    pugDimensions.width + offset,
-    pugDimensions.height + offset
+    -tuffyDimensions.width / 2 - offset/2 + (movementOffset.x * currentPercentage),
+    -tuffyDimensions.height / 2 - offset/2 + (movementOffset.y * currentPercentage),
+    tuffyDimensions.width + offset,
+    tuffyDimensions.height + offset
   );
 }
 
