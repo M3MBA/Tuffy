@@ -29,7 +29,7 @@ context.translate(window.innerWidth / 2, window.innerHeight / 2);
 
 const image = new Image();
 
-image.src = "image/Raul.png";
+image.src = "Raul.png";
 
 const loopingPugs = 40;
 
